@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.0/vue-resource.js"> </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+        <div id="rates" overflow-x: scroll>
+                <table border=1>
+                    <template v-if=mobileUser>
+                        <thead>
+                            <th>Rank</th>
+                            <th>Название</th>
+                            <th>Стоимость</th>
+                        </thead>
+                        <tr v-for="currency in listing.data">
+                            <td>{{ currency.rank }}</td>
+                            <td>{{ currency.id }}</td>
+                            <td>{{ currency.priceUsd }}</td>
+                    </template>
+                    <template v-else>
+                        <thead>
+                            <th>Rank</th>
+                            <th>Название</th>
+                            <th>Стоимость</th>
+                            <th>Рыночная капитализация</th>
+                            <th>Суточный объём</th>
+                        </thead>
+                        <tr v-for="currency in listing.data">
+                            <td>{{ currency.rank }}</td>
+                            <td>{{ currency.id }}</td>
+                            <td>{{ currency.priceUsd }}</td>
+                            <td>{{ currency.marketCapUsd }}</td>
+                            <td>{{ currency.volumeUsd24Hr }}</td>
+                        </template>
+                    </tr>
+
+                </table>
+
+<!--            <button v-on:click="query">Get rates</button>-->
+<!--            <button v-on:click="isMobile">isMobile</button>-->
+        </div>
+
+        <script src="rates.js"></script>
+
+
+</body>
+</html>
