@@ -9,7 +9,7 @@ var rates = new Vue({
         query: function () {
             this.$http.get('https://api.coincap.io/v2/assets?limit=15').then(response => {
                 this.listing = response.body;
-                // console.log(response.body)
+                console.log(response.body)
             }, response => {
                 console.log("Ошибка")
             })

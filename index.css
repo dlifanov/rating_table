@@ -1,91 +1,10 @@
-/*@media screen and (max-width: 640px) {*/
-/*    table {*/
-/*        overflow-x: auto;*/
-/*        display: block;*/
-/*    }*/
-/*}*/
+div#table-scroll:hover {
+    display: block;
+    height: 30em;
+    overflow-y: scroll;
+}
 
-/*!* width *!*/
-/*::-webkit-scrollbar {*/
-/*    width: 10px;*/
-/*}*/
-
-/*!* Track *!*/
-/*::-webkit-scrollbar-track {*/
-/*    background: #f1f1f1;*/
-/*}*/
-
-/*!* Handle *!*/
-/*::-webkit-scrollbar-thumb {*/
-/*    background: #888;*/
-/*}*/
-
-/*!* Handle on hover *!*/
-/*::-webkit-scrollbar-thumb:hover {*/
-/*    background: #555;*/
-/*}*/
-
-/*tbody {*/
-/*    height:800em;*/
-/*    overflow:scroll;*/
-/*}*/
-
-/*tbody {*/
-/*    height:800em;*/
-/*    overflow:scroll;*/
-/*}*/
-
-
-
-
-/*th {*/
-/*    background-color: #f5f5f5;*/
-/*    color: black;*/
-/*}*/
-
-/*tr:hover {background-color: #f5f5f5;}*/
-
-
-/*.scrollable tbody {*/
-/*    display: block;*/
-/*    max-height: 400px;*/
-/*    overflow-y: scroll;*/
-/*}*/
-
-/*.scrollable thead,*/
-/*tbody tr {*/
-/*    display: table;*/
-/*    width: 100%;*/
-/*    table-layout: fixed;*/
-/*}*/
-
-/*div {*/
-/*    height: 380px;*/
-/*    !*width: 50%;*!*/
-/*    margin: 0 auto;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*div:hover {*/
-/*    overflow-y: scroll;*/
-/*}*/
-
-/*.table-fixed thead {*/
-/*    width: 97%;*/
-/*}*/
-/*.table-fixed tbody {*/
-/*    height: 230px;*/
-/*    overflow-y: auto;*/
-/*    width: 100%;*/
-/*}*/
-/*.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {*/
-/*    display: block;*/
-/*}*/
-/*.table-fixed tbody td, .table-fixed thead > tr> th {*/
-/*    float: left;*/
-/*    border-bottom-width: 0;*/
-/*}*/
-
-.table-responsive:hover {
-    overflow: scroll;
+div#rates {
+    margin-right: 5%;
+    margin-left: 5%;
 }
