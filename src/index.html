@@ -15,26 +15,26 @@
 <body>
 
 
-        <div id="rates">
-            <template v-if=mobileUser>
-${require('./table/html/table__table_mobile_header.html')}
-            <div id="table-scroll">
-                <table class="table table-hover table-sm">
-<!--                    <template v-if=mobileUser>-->
-${require('./table/html/table__table_mobile_body.html')}
-            </template>
-                    <template v-else>
-${require('./table/html/table__table_desktop_header.html')}
-            <div id="table-scroll">
-                <table class="table table-hover table-sm">
-${require('./table/html/table__table_desktop_body.html')}
-                    </template>
-                </table>
-            </div>
-        </div>
+<div id="rates">
+    <template v-if=mobileUser>
+        ${require('./table/html/table__table_mobile_header.html')}
+        <div id="table-scroll">
+            <table class="table table-hover table-sm">
+                <!--                    <template v-if=mobileUser>-->
+                ${require('./table/html/table__table_mobile_body.html')}
+            </table>
+    </template>
+    <template v-else>
+        ${require('./table/html/table__table_desktop_header.html')}
+        <div id="table-scroll">
+            <table class="table table-hover table-sm">
+                ${require('./table/html/table__table_desktop_body.html')}
+            </table>
+    </template>
+    </table>
+</div>
+</div>
 
 <!--        built by Webpack-->
-<!--        <script src="bundle.js"></script>-->
-<!--        <script src="rates.js"></script>-->
 </body>
 </html>
